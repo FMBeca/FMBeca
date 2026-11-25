@@ -13,7 +13,8 @@ and maps every alert to MITRE ATT&CK.
 - **SSH:** brute force, password spraying and successful logins after an attack
 - **Web (Apache/Nginx):** SQL injection, XSS, path traversal, Log4Shell and directory brute force,
   including scanners that hide behind a browser User-Agent
-- Python with no runtime dependencies, tested with pytest in GitHub Actions CI
+- **Custom rules** in Sigma format and a self-contained **HTML report**
+- Python with no required dependencies, tested with pytest in GitHub Actions CI
 
 ### Focus areas
 
@@ -29,7 +30,7 @@ Python · C · C# · Linux · Git · GitHub Actions
 
 - [x] LogSentinel: SSH attack detection
 - [x] LogSentinel: web attack detection
-- [ ] LogSentinel v1.0: Sigma-style YAML rules and an HTML report
+- [x] LogSentinel v1.0: Sigma rules and an HTML report
 - [ ] Port and service scanner in Python
 - [ ] Windows / Active Directory enumeration tool in C#
 - [ ] CTF and lab write-ups
