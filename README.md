@@ -16,6 +16,7 @@ and maps every alert to MITRE ATT&CK.
 - **Custom rules** in Sigma format (web and sshd), a self-contained **HTML report**
   and optional IP reputation from AbuseIPDB
 - Python with no required dependencies, tested with pytest in GitHub Actions CI
+  and against real Ubuntu / OpenSSH 10 logs from my lab
 
 ### Focus areas
 
