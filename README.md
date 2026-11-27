@@ -5,7 +5,7 @@ to understand how attacks work and how they get detected.
 
 Based in Portugal · [LinkedIn](https://www.linkedin.com/in/fernando-beca/)
 
-### Featured project
+### Featured projects
 
 **[LogSentinel](https://github.com/FMBeca/logsentinel)**: detects attacks in Linux and web server logs
 and maps every alert to MITRE ATT&CK.
@@ -18,10 +18,20 @@ and maps every alert to MITRE ATT&CK.
 - Python with no required dependencies, tested with pytest in GitHub Actions CI
   and against real Ubuntu / OpenSSH 10 logs from my lab
 
+**[MailSentinel](https://github.com/FMBeca/mailsentinel)**: triages a suspicious email (`.eml`) and
+returns a scored verdict, with every reason mapped to MITRE ATT&CK.
+
+- **Sender:** SPF, DKIM and DMARC results, misleading display names, replies diverted elsewhere
+  and look-alike domains (typos, homoglyphs, punycode)
+- **Links and attachments:** link text that hides the real destination, password forms,
+  executables, macros and disguised file names, with SHA-256 hashes
+- Defanged indicators ready to share, JSON output and exit codes for scripts;
+  Python with no required dependencies, works offline
+
 ### Focus areas
 
 - **Offensive:** penetration testing, enumeration and exploitation in lab environments
-- **Defensive:** log analysis, detection engineering, MITRE ATT&CK
+- **Defensive:** log and phishing email analysis, detection engineering, MITRE ATT&CK
 - **Tooling:** writing my own security tools instead of only running existing ones
 
 ### Tech
@@ -34,6 +44,7 @@ Python · C · C# · Linux · Git · GitHub Actions
 - [x] LogSentinel: web attack detection
 - [x] LogSentinel v1.0: Sigma rules and an HTML report
 - [x] LogSentinel v1.1: Sigma rules for SSH logs and IP reputation
+- [x] MailSentinel v0.1: phishing email triage
 - [ ] Port and service scanner in Python
 - [ ] Windows / Active Directory enumeration tool in C#
 - [ ] CTF and lab write-ups
