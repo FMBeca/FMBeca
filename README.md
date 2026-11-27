@@ -38,15 +38,4 @@ returns a scored verdict, with every reason mapped to MITRE ATT&CK.
 
 Python · C · C# · Linux · Git · GitHub Actions
 
-### Roadmap
-
-- [x] LogSentinel: SSH attack detection
-- [x] LogSentinel: web attack detection
-- [x] LogSentinel v1.0: Sigma rules and an HTML report
-- [x] LogSentinel v1.1: Sigma rules for SSH logs and IP reputation
-- [x] MailSentinel v0.1: phishing email triage
-- [ ] Port and service scanner in Python
-- [ ] Windows / Active Directory enumeration tool in C#
-- [ ] CTF and lab write-ups
-
 > All offensive work is done in my own labs or on authorized platforms.
